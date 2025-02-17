@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Rum+Raisin&display=swap');
+
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: "Anton" serif;
+    background-color: #f4f4f4;
+    color: #0A1E76;
+}
+
+/* Navegação */
+nav {
+    background-color: #0A1E76;
+    color: #EFE0CD;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Container Principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* Lado Esquerdo */
+.left {
+    flex: 0 0 50%; /* Lado esquerdo ocupa 50% da tela */
+    text-align: center;
+}
+
+/* Foto do Produto */
+.product-img {
+    width: 100%;
+    max-width: 400px; /* Limita a largura da imagem */
+    height: auto;
+    margin-bottom: 20px;
+    font-family: "anton" serif;
+}
+
+/* Sinopse e Botão */
+.synopsis {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.synopsis h2 {
+    font-family: "Anton",serif;
+    color: #00014A;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+.synopsis .btn {
+    padding: 10px 20px;
+    background-color: #EFE0CD;
+    color: #0A1E76;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.synopsis .btn:hover {
+    background-color: #D6C0A3;
+}
+
+/* Lado Direito */
+.right {
+    flex: 0 0 40%; /* Lado direito ocupa 40% da tela */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aside-item {
+    background-color: #EFE0CD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.aside-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.aside-item .btn {
+    padding: 10px 20px;
+    background-color: #0A1E76;
+    color: #EFE0CD;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.aside-item .btn:hover {
+    background-color: #1A2F8F;
+}
+
+h1 {
+    font-family: "Anton"serif;
+    font-size: 50px;
+    color:#FFEFD8;
+}
+.fotinha{
+    margin-top: 30px;
+}
+
+.final{
+    font-family: "League Spartan," serif;
+    background-color: #0A1E76;
+    color: #EFE0CD;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.sobre{
+    font-family: "Anton",serif;
+    color: #00014A;
+    text-align: left;
+    font-size: 30;
+
+}
+
+.augusto{
+    color: #0A1E76;
+    font-family: "Anton",serif;
+    font-size: 20px;
+}
+
+.tecnicas{
+    font-family: "League Spartan,serif";
+    color: #00014A;
+    text-align: left;
+    font-size: 22px;
+}
+
+.livro{
+    font-family: "Anton",serif;
+    color: #00014A;
+    text-align:left;
+    font-size: 30px;
+}
+
+.quem{
+    font-family: "Anton",serif;
+    color: #D6C0A3;
+}
+
+.jesus{
+    color: #0A1E76;
+    font-family: "Anton",serif;
+}
+@media (max-width: 1200px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .left, .right {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 24px;
+    }
+
+    .product-img {
+        max-width: 80%; /* Aumenta a flexibilidade das imagens */
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .synopsis h2 {
+        font-size: 24px;
+    }
+
+    .synopsis .btn {
+        padding: 12px 25px;
+    }
+
+    .aside-item .btn {
+        padding: 10px 25px;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .product-img {
+        width: 100%; /* Ajuste para telas pequenas */
+    }
+
+    .synopsis h2 {
+        font-size: 22px;
+    }
+
+    .synopsis .btn, .aside-item .btn {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    .final {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .aside-item img {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+}

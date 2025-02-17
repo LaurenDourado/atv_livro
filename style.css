@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Rum+Raisin&display=swap');
+
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body, html {
+    height: 100%; /* Faz a altura ser 100% da tela */
+    margin: 0;
+    overflow: hidden; /* Impede a rolagem */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do vídeo de fundo */
+#video-background {
+    position: fixed; /* Fixa o vídeo na tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* O vídeo ocupa toda a largura */
+    height: 100%; /* O vídeo ocupa toda a altura */
+    object-fit: cover; /* Faz o vídeo cobrir a tela mantendo a proporção */
+    z-index: -1; /* Coloca o vídeo atrás de todo o conteúdo */
+}
+
+/* Estilo para o container */
+.container {
+    text-align: center;
+    background-color: rgba(225, 211, 166, 0.788); /* Cor de fundo semitransparente para dar contraste */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color:#00014A;
+    max-width: 600px; /* Limita a largura do container */
+    width: 100%; /* Garante que o container seja responsivo */
+    z-index: 1; /* Garante que o conteúdo fique acima do vídeo */
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para centralizar */
+}
+
+/* Estilo do título */
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos botões */
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo do botão "Sim, acredito" */
+.b1 {
+    background-color: #00014A;  /* Verde escuro */
+    color:#EFE0CD;
+}
+
+.b1:hover {
+    background-color: #1A2F8F;  /* Verde suave no hover */
+    transform: translateY(-3px);  /* Efeito de elevação */
+}
+
+
+/* Garantir que links dentro de botões não herdem o estilo de link */
+button a {
+    text-decoration: none; /* Remove a linha embaixo */
+    color: inherit; /* Herda a cor do botão */
+}
