@@ -8,7 +8,7 @@ Nós realizamos todas as etapas do desenvolvimento, desde o levantamento de requ
 
 ### 📌 Entregas Realizadas
 
-- Levantamento de Requisitos: Criamos um documento físico (folha de sulfite) contendo brainstorm, formulários e entrevistas para coletar informações relevantes.
+- Levantamento de Requisitos: Criamos um documento físico (folha de sulfite) contendo uma entrevista para coletar informações relevantes.
 
 - Wireframe de Baixa Fidelidade: Elaboramos um esboço feito à mão em folha de sulfite, representando a estrutura inicial da página web.
 
@@ -23,4 +23,5 @@ Foi uma experiência enriquecedora, onde pudemos aprimorar nossas habilidades em
 ##  🖼️ Como vizualizar o figma
 
 Você pode visualizar o protótpo diretamente pelo link abaixo:
+
 https://www.figma.com/design/vd5WUqoFWG4mgz64cOeVdm/mobile?node-id=1-3&p=f&t=Xur23z7TNBKoUrfx-0
