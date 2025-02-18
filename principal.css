@@ -185,6 +185,25 @@ h1 {
     color: #0A1E76;
     font-family: "Anton",serif;
 }
+
+.feedback{
+    padding: 10px 20px;
+    background-color: #EFE0CD;
+    color: #0A1E76;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.leitor{
+    font-family: "Anton",serif;
+    color: #1A2F8F;
+    font-size: 30px;
+}
+
+}
 @media (max-width: 1200px) {
     .main-container {
         flex-direction: column;
