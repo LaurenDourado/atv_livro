@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=League+Spartan:wght@100..900&family=Rum+Raisin&display=swap');
-
 /* Estilo geral do "livro" */
 .livro {
     position: relative;
@@ -13,9 +11,11 @@
     overflow: hidden;
 }
 
+/* Estilo das seções (feedbacks) */
 .item {
     display: none;
-    width: 70%;
+    width: 90%; /* Ajuste de largura para telas menores */
+    max-width: 800px; /* Largura máxima para evitar que fique muito grande em telas grandes */
     height: 80%;
     position: absolute;
     top: 10%;
@@ -29,12 +29,14 @@
     opacity: 0;
 }
 
+/* Ativar a exibição do item com a animação */
 .item.ativo {
     display: block;
     opacity: 1;
     animation: viradaPagina 1s ease-in-out;
 }
 
+/* Estilo dos títulos e texto */
 .item .titulo {
     font-size: 3rem;
     color: #ffffff;
@@ -60,14 +62,14 @@
     z-index: 2;
 }
 
-/* Estilo dos botões */
+/* Estilo dos botões de navegação */
 #anterior, #proximo {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color:#E5CEAC;
+    background-color: #E5CEAC;
     border: 1px solid #E5CEAC;
     color: #EEE;
     font-size: x-large;
@@ -78,14 +80,14 @@
 }
 
 #anterior {
-    left: 30px;
+    left: 20px;
 }
 
 #proximo {
-    right: 30px;
+    right: 20px;
 }
 
-/* Animação de virada de página */
+/* Animações de virada de página */
 @keyframes viradaPagina {
     0% {
         transform: rotateY(90deg);
@@ -116,28 +118,96 @@
     }
 }
 
-.estrela{
-    position: fixed; /* Posiciona a imagem em relação à janela de visualização */
-    left: 85px; /* Distância da margem esquerda da tela */
-    bottom: 30px; /* Distância do fundo da tela, um pouco acima da parte inferior */
-    width: 160px; /* Largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-    z-index: 10; /* Garante que a imagem fique acima de outros elementos */
+/* Estrela */
+.estrela {
+    position: fixed;
+    left: 85px;
+    bottom: 30px;
+    width: 160px;
+    height: auto;
+    z-index: 10;
 }
 
+/* Estilo do nav */
 nav {
-    background-color: #0A1E76;
-    color: #EFE0CD;
+    background-color: #0A1E76; /* Cor do fundo do nav */
+    color: #EFE0CD; /* Cor do texto */
     padding: 15px;
     text-align: center;
-    font-family: "Anton" serif;
+    font-family: "Anton", serif;
 }
 
-.final{
+/* Estilo do footer */
+footer.final {
     font-family: "League Spartan," serif;
-    background-color: #0A1E76;
-    color: #EFE0CD;
+    background-color: #0A1E76; /* Cor do fundo do footer */
+    color: #EFE0CD; /* Cor do texto */
     text-align: center;
     padding: 10px;
     margin-top: auto;
+}
+
+/* Responsividade - Ajustes para telas menores (tablet, celular) */
+@media (max-width: 768px) {
+    .item {
+        width: 95%; /* Aumenta a largura para ficar mais visível em telas menores */
+    }
+
+    .item .titulo {
+        font-size: 2rem; /* Reduz o tamanho da fonte */
+    }
+
+    .item .feedback {
+        font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .item .autor {
+        font-size: 1rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .estrela {
+        position: fixed;
+        left: 95px;
+        bottom: 30px; /* Ajustando a posição da estrela para ficar mais em baixo */
+        width: 180px;
+        height: auto;
+        z-index: 10;
+    }
+
+    #anterior, #proximo {
+        width: 40px;
+        height: 40px;
+        font-size: large;
+    }
+}
+
+/* Responsividade para telas muito pequenas (celular) */
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* Ocupa toda a largura da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .item .titulo {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .item .feedback {
+        font-size: 1rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .item .autor {
+        font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+    }
+
+    .estrela {
+        width: 80px; /* Diminui ainda mais a largura da estrela */
+        left: 5px;
+    }
+
+    #anterior, #proximo {
+        width: 30px;
+        height: 30px;
+        font-size: medium;
+    }
 }
